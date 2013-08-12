@@ -84,15 +84,6 @@
       "fileType" : 1,
       "debugStyle" : 0
     },
-    "\/css\/madmob.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/madmob.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
-    },
     "\/images\/app-logo.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -104,12 +95,23 @@
       "initialSize" : 8685,
       "fileType" : 8192
     },
-    "\/css\/ext\/bootstrap.css" : {
+    "\/images\/logo.sm.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/ext\/bootstrap.css",
+      "inputAbbreviatedPath" : "\/images\/logo.sm.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/logo.sm.png",
+      "initialSize" : 3412,
+      "fileType" : 8192
+    },
+    "\/css\/madmob.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/css\/madmob.css",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
     },
@@ -151,6 +153,24 @@
       "outputAbbreviatedPath" : "\/images\/hero-bg-mobile.png",
       "initialSize" : 45763,
       "fileType" : 8192
+    },
+    "\/privacy.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/privacy.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/css\/ext\/bootstrap.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/css\/ext\/bootstrap.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
     },
     "\/less\/bootstrap-mixins.less" : {
       "ieCompatibility" : 1,

@@ -154,6 +154,13 @@
 #header .logo-box {
   line-height: 56px;
 }
+#header .logo-box .logo {
+  display: inline-block;
+  width: 179px;
+  height: 41px;
+  background: transparent url(/images/logo.png) no-repeat 0 0;
+  vertical-align: middle;
+}
 #header .top-nav ul {
   float: right;
   margin: 0;
@@ -174,6 +181,9 @@
 }
 #header .top-nav ul li a:hover {
   text-decoration: underline;
+}
+#header .top-nav ul li.selected a {
+  color: #e1e1e1;
 }
 #hero {
   min-height: 463px;
@@ -226,6 +236,15 @@
 .body-content {
   margin-bottom: 27px;
 }
+.body-content h1 {
+  color: #4c4c4c;
+  font-size: 34px;
+  line-height: 40px;
+}
+.body-content h2 {
+  font-size: 14px;
+  font-weight: 600;
+}
 .body-content .rounded-box {
   padding: 13px;
   -webkit-border-radius: 8px;
@@ -269,6 +288,12 @@
   .show-extra-small {
     display: block;
   }
+  #header .logo-box .logo {
+    background-image: url(/images/logo.sm.png);
+  }
+  #header .top-nav ul li {
+    margin-left: 15px;
+  }
   #hero h1 {
     text-align: center;
   }
@@ -284,9 +309,6 @@
     display: block;
     margin: 0 0 10px;
     text-align: center;
-  }
-  .body-content {
-    margin: 0;
   }
   .body-content .rounded-box {
     margin-bottom: 20px;

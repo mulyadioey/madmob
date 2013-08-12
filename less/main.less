@@ -19,6 +19,13 @@ body {
 	
 	.logo-box {
 		line-height: 56px;
+		
+		.logo {
+			display: inline-block;
+			.size(41px, 179px);
+			background: transparent url(/images/logo.png) no-repeat 0 0;
+			vertical-align: middle;
+		}
 	}
 	
 	.top-nav {
@@ -44,6 +51,10 @@ body {
 					&:hover {
 						text-decoration: underline;
 					}
+				}
+			
+				&.selected a {
+					color: #e1e1e1;
 				}
 			}
 		}		
@@ -101,6 +112,17 @@ body {
 .body-content {
 	margin-bottom: 27px;
 	
+	h1 {
+		color: #4c4c4c;		
+		font-size: 34px;
+		line-height: 40px;
+	}
+	
+	h2 {
+		font-size: 14px;
+		font-weight: 600;
+	}
+	
 	.rounded-box {
 		padding: 13px;
 		.border-radius(8px);
@@ -120,6 +142,10 @@ body {
 			font-size: 13px;
 			line-height: 21px;
 		}
+	}
+	
+	ul {
+		
 	}
 } // .body-content
 
