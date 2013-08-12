@@ -1,0 +1,140 @@
+body {
+	background-color: #f8f8f8;	
+}
+
+.show-extra-small {
+	display: none;
+}
+
+.hide-extra-small {
+	display: block;
+}
+
+#header {
+	position: relative;;
+	z-index: 2;
+	height: 56px;
+	background-color: #000;
+	.box-shadow(0px 8px 10px rgba(0,0,0,.55));
+	
+	.logo-box {
+		line-height: 56px;
+	}
+	
+	.top-nav {
+		
+		ul {
+			float: right;
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			
+			li {
+				float: left;
+				margin-left: 20px;
+				line-height: 56px;
+				list-style: none;
+				
+				a {
+					color: #848484;
+					font-family: 'Helvetica', Arial, Sans-serif;
+					font-size: 12px;
+					font-weight: bold;
+					
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+		}		
+	}
+} // #header
+
+#hero {
+	min-height: 463px;
+	background: url(/images/hero-bg.png) repeat 0 0;
+	text-align: center;
+	z-index: 1;
+	
+	.row {
+		padding-top: 52px;
+	}
+	
+	h1 {
+		margin: 54px 0 48px 0;		
+		color: #fff;
+		font-family: 'HelveticaNeue', Arial, Sans-serif;
+		font-size: 40px;
+		font-weight: bold;
+		line-height: 42px;
+		text-align: left;
+		
+		span {
+			color: #f72a14;	
+		}
+	}		
+	
+	.phone-box {
+		margin-right: 10%;
+		height: 411px;
+		background-image: url(/images/phone.png);
+		background-repeat: no-repeat;
+		background-position: right 0;
+	}
+	
+	.download-cta-box {
+		font-size: 0;
+		text-align: left;
+	
+		> div {
+			display: inline-block;
+			margin-right: 15px;
+		}
+	}
+} // #hero
+
+.bg-block {
+	padding-top: 30px;
+	#gradient .vertical(#bebebe, #f8f8f8);
+}
+
+.body-content {
+	margin-bottom: 27px;
+	
+	.rounded-box {
+		padding: 13px;
+		.border-radius(8px);
+		background: transparent url(/images/bg-box.png) repeat 0 0;
+		
+		h2 {
+			margin-top: 0px;
+			color: #363636;
+			font-family: 'HelveticaNeue', Arial, Sans-serif;
+			font-size: 34px;
+			line-height: 35px;
+		}
+		
+		p {
+			margin-bottom: 0;
+			font-family: 'Helvetica', Arial, Sans-serif;
+			font-size: 13px;
+			line-height: 21px;
+		}
+	}
+} // .body-content
+
+#footer {
+
+	p {
+		color: #848484;
+		font-family: 'Helvetica', Arial, Sans-serif;
+		font-size: 12px;		
+	}
+	
+	a {
+		display: inline-block;
+		margin-left: 10px;
+		color: #848484;
+		text-decoration: underline;
+	}
+} // #footer

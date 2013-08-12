@@ -1,0 +1,297 @@
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 28px;
+  /* Make inputs at least the height of their button counterpart */
+
+  /* Makes inputs behave like true block-level elements */
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*
+
+//
+// Commented this out because it doesn't compile in LESS 1.4.1.
+//   And, we don't use it anyway.
+//
+
+// The Grid
+#grid {
+
+  .core (@gridColumnWidth, @gridGutterWidth) {
+
+    .spanX (@index) when (@index > 0) {
+      (~".span@{index}") { .span(@index); }
+      .spanX(@index - 1);
+    }
+    .spanX (0) {}
+
+    .offsetX (@index) when (@index > 0) {
+      (~".offset@{index}") { .offset(@index); }
+      .offsetX(@index - 1);
+    }
+    .offsetX (0) {}
+
+    .offset (@columns) {
+      margin-left: (@gridColumnWidth * @columns) + (@gridGutterWidth * (@columns - 1)) + (@gridGutterWidth * 2);
+    }
+
+    .span (@columns) {
+      width: (@gridColumnWidth * @columns) + (@gridGutterWidth * (@columns - 1));
+    }
+
+    .row {
+      margin-left: @gridGutterWidth * -1;
+      .clearfix();
+    }
+
+    [class*="span"] {
+      float: left;
+      margin-left: @gridGutterWidth;
+    }
+
+    // Set the container width, and override it for fixed navbars in media queries
+    .container,
+    .navbar-fixed-top .container,
+    .navbar-fixed-bottom .container { .span(@gridColumns); }
+
+    // generate .spanX and .offsetX
+    .spanX (@gridColumns);
+    .offsetX (@gridColumns);
+
+  }
+
+  .fluid (@fluidGridColumnWidth, @fluidGridGutterWidth) {
+
+    .spanX (@index) when (@index > 0) {
+      (~"> .span@{index}") { .span(@index); }
+      .spanX(@index - 1);
+    }
+    .spanX (0) {}
+
+    .span (@columns) {
+      width: (@fluidGridColumnWidth * @columns) + (@fluidGridGutterWidth * (@columns - 1));
+    }
+
+    .row-fluid {
+      width: 100%;
+      .clearfix();
+      > [class*="span"] {
+        float: left;
+        margin-left: @fluidGridGutterWidth;
+      }
+      > [class*="span"]:first-child {
+        margin-left: 0;
+      }
+
+      // generate .spanX
+      .spanX (@gridColumns);
+    }
+
+  }
+
+  .input(@gridColumnWidth, @gridGutterWidth) {
+
+    .spanX (@index) when (@index > 0) {
+      (~"input.span@{index}, textarea.span@{index}, .uneditable-input.span@{index}") { .span(@index); }
+      .spanX(@index - 1);
+    }
+    .spanX (0) {}
+
+    .span(@columns) {
+      width: ((@gridColumnWidth) * @columns) + (@gridGutterWidth * (@columns - 1)) - 10;
+    }
+
+    input,
+    textarea,
+    .uneditable-input {
+      margin-left: 0; // override margin-left from core grid system
+    }
+
+    // generate .spanX
+    .spanX (@gridColumns);
+
+  }
+
+}
+*/body {
+  background-color: #f8f8f8;
+}
+.show-extra-small {
+  display: none;
+}
+.hide-extra-small {
+  display: block;
+}
+#header {
+  position: relative;
+  z-index: 2;
+  height: 56px;
+  background-color: #000;
+  -webkit-box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.55);
+  -moz-box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.55);
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.55);
+}
+#header .logo-box {
+  line-height: 56px;
+}
+#header .top-nav ul {
+  float: right;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#header .top-nav ul li {
+  float: left;
+  margin-left: 20px;
+  line-height: 56px;
+  list-style: none;
+}
+#header .top-nav ul li a {
+  color: #848484;
+  font-family: 'Helvetica', Arial, Sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+#header .top-nav ul li a:hover {
+  text-decoration: underline;
+}
+#hero {
+  min-height: 463px;
+  background: url(/images/hero-bg.png) repeat 0 0;
+  text-align: center;
+  z-index: 1;
+}
+#hero .row {
+  padding-top: 52px;
+}
+#hero h1 {
+  margin: 54px 0 48px 0;
+  color: #fff;
+  font-family: 'HelveticaNeue', Arial, Sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 42px;
+  text-align: left;
+}
+#hero h1 span {
+  color: #f72a14;
+}
+#hero .phone-box {
+  margin-right: 10%;
+  height: 411px;
+  background-image: url(/images/phone.png);
+  background-repeat: no-repeat;
+  background-position: right 0;
+}
+#hero .download-cta-box {
+  font-size: 0;
+  text-align: left;
+}
+#hero .download-cta-box > div {
+  display: inline-block;
+  margin-right: 15px;
+}
+.bg-block {
+  padding-top: 30px;
+  background-color: #d5d5d5;
+  background-image: -moz-linear-gradient(top, #bebebe, #f8f8f8);
+  background-image: -ms-linear-gradient(top, #bebebe, #f8f8f8);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#bebebe), to(#f8f8f8));
+  background-image: -webkit-linear-gradient(top, #bebebe, #f8f8f8);
+  background-image: -o-linear-gradient(top, #bebebe, #f8f8f8);
+  background-image: linear-gradient(top, #bebebe, #f8f8f8);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bebebe', endColorstr='#f8f8f8', GradientType=0);
+}
+.body-content {
+  margin-bottom: 27px;
+}
+.body-content .rounded-box {
+  padding: 13px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  background: transparent url(/images/bg-box.png) repeat 0 0;
+}
+.body-content .rounded-box h2 {
+  margin-top: 0px;
+  color: #363636;
+  font-family: 'HelveticaNeue', Arial, Sans-serif;
+  font-size: 34px;
+  line-height: 35px;
+}
+.body-content .rounded-box p {
+  margin-bottom: 0;
+  font-family: 'Helvetica', Arial, Sans-serif;
+  font-size: 13px;
+  line-height: 21px;
+}
+#footer p {
+  color: #848484;
+  font-family: 'Helvetica', Arial, Sans-serif;
+  font-size: 12px;
+}
+#footer a {
+  display: inline-block;
+  margin-left: 10px;
+  color: #848484;
+  text-decoration: underline;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #hero .phone-box {
+    margin-right: 5%;
+  }
+}
+@media (max-width: 767px) {
+  .hide-extra-small {
+    display: none;
+  }
+  .show-extra-small {
+    display: block;
+  }
+  #hero h1 {
+    text-align: center;
+  }
+  #hero .phone-box {
+    margin: 0 auto;
+    width: 337px;
+    height: 411px;
+  }
+  #hero .download-cta-box {
+    margin-bottom: 60px;
+  }
+  #hero .download-cta-box > div {
+    display: block;
+    margin: 0 0 10px;
+    text-align: center;
+  }
+  .body-content {
+    margin: 0;
+  }
+  .body-content .rounded-box {
+    margin-bottom: 20px;
+  }
+  #footer .row {
+    text-align: center;
+  }
+}
